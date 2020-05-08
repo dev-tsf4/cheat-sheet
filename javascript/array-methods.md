@@ -18,7 +18,7 @@ const companies = [
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 ```
-## Méthode forEach()
+## forEach() Method
 ```javascript
 // Similar
 
@@ -36,7 +36,7 @@ companies.forEach(function(company) {
 
 companies.forEach(company => console.log(company))
 ```
-## Méthode filter()
+## filter() Method
 ```javascript
 // Similar
 
@@ -87,7 +87,67 @@ const lastTenYears = companies.filter(company => (company.end - company.start) >
 console.log(lastTenYears);
 ```
 
-## Méthode map()
+## includes() Method
+```javascript
+/*
+The includes() method determines whether one
+string may be found within another string,
+returning true or false as appropriate.
+*/
+
+ages.includes(21);
+// expected output: true
+
+ages.includes(18);
+// expected output: true
+```
+
+## some() Method
+```javascript
+/*
+The some() method tests whether at least one element in the array
+passes the test implemented by the provided function.
+It returns a Boolean value.
+*/
+
+ages.some(age => age < 8);
+// expected output: true
+
+ages.some(age => age > 75);
+// expected output: false
+```
+
+## every() Method
+```javascript
+/*
+The every() method tests whether all elements in the array
+pass the test implemented by the provided function.
+It returns a Boolean value.
+*/
+
+ages.every(age => age > 4);
+// expected output: true
+
+ages.every(age => age > 30);
+// expected output: false
+```
+
+## reverse() Method
+```javascript
+ages.reverse(); // [32, 64, 25, 45, 15, 13, 61, 44, 21, 54, 5, 16, 20, 12, 33]
+```
+
+## concat() Method
+```javascript
+const arrayOne = [[1]];
+const arrayTwo = [2, [3]];
+
+const arrayThree = arrayOne .concat(arrayTwo);
+
+console.log(arrayThree); // [[1], 2, [3]]
+```
+
+## map() Method
 
 ### Create array of company names
 ```javascript
@@ -119,7 +179,7 @@ const companyInformations = companies.map(company => `${company.name} [${company
 console.log(companyInformations);
 ```
 
-## Méthode sort()
+## sort() Method
 
 ### Sort companies by years of creation
 ```javascript
@@ -142,7 +202,7 @@ const sortAges = ages.sort((a, b) => a - b);
 console.log(sortAges);
 ```
 
-## Méthode reduce()
+## reduce() Method
 ```javascript
 // Similar
 
