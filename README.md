@@ -9,6 +9,6 @@
 
 - [Git](git/git.md)
 
-## Gestionnaire de paquets
+## Package Manager
 
-- [Npm](gestionnaire-de-paquets/npm.md)
+- [Npm](package-manager/npm.md)
