@@ -99,7 +99,7 @@ ages.includes(21);
 // expected output: true
 
 ages.includes(18);
-// expected output: true
+// expected output: false
 ```
 
 ## some() Method
